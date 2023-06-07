@@ -1,0 +1,112 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    'siden top'
+    'siden content'
+    'siden ad'
+    ;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    height: 100vh;
+    background-color: #5CDB95;
+}
+div{
+    width: 100%;
+    background-color: steelblue;
+    border:1px solid #5CDB95;
+    
+}
+
+#topnav{
+    grid-area: top;   
+    align-items: center;
+    background-color: #5CDB95;
+}
+#sidenav{
+    grid-area: siden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5CDB95;
+}
+#sidenav #opad{
+    background-color: #5CDB95;
+    height: 310px;
+    
+    
+}
+#sidenav h2{
+    font-size: xx-large;
+    margin-top: 20px;
+}
+#sidenav h4{
+    padding-bottom: 20px;
+    font-size: larger;
+}
+#sidenav ul{
+   list-style: none;
+   
+
+}
+#sidenav ul li{
+    margin-bottom: 30px;
+}
+#sidenav ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(17, 104, 11);
+    padding: 10px 30px; 
+    
+    
+}
+#sidenav ul li a:hover{
+    background-color: #05386B;
+    color: #fff;
+    border-radius: 20px;
+}
+#ad{
+    color:white;
+    background-color: #5CDB95;
+}
+
+#content{
+    grid-area: content;
+    border: 1px  #5CDB95;
+    border-radius: 10px;
+    
+}
+#topnav ul {
+    display: flex;
+    width:100%;
+    height: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+#topnav ul li a{
+    text-decoration: none;
+    color:black ;
+    padding: 20px;
+    margin-left: 10px;
+    display: block;
+}
+
+#topnav ul li a:hover{
+    color: #FFF;
+    background-color: #05386B;
+    border-radius: 5px;
+}
+
+#content{
+    background-color: #05386B;
+    color: white;
+    font-size: 35px;
+    font-weight:bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

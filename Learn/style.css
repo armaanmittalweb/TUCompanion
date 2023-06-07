@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgba(210, 205, 205, 0.798);
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'tip tip tip'
+    'searchsearch search'
+    'ad free recent'
+    
+    ;
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr  3fr  2fr;
+
+}
+
+div{
+    background-color: steelblue;
+    border: 1px solid skyblue;
+    color: black;
+    
+    
+}
+
+#tip{
+    grid-area: tip;
+}
+
+#search{
+    grid-area: search;
+}
+#ad{
+    grid-area: ad;
+}
+#recent{
+    grid-area: recent;
+}
+/* #search{
+    display: flex;
+}
+#searchin{
+     width: 0%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  /*margin-right: 25%;
+  margin-left:
+   25%;
+  margin-right: 25%;
+  margin-right: 25%; */
+/* }
+button{
+    position: relative;
+} \ */

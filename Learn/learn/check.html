@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <title>Learn</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+      position: relative;
+      background-image: url('lib.png');
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      padding: 10px;
+    }
+    
+    #TU {
+      font-size: 40px;
+      font-weight: bold;
+      color: red;
+      text-decoration: none;
+    }
+    #tip-box{
+      position:absolute;
+      top:40px;
+      left:550px;
+      width:500px;
+      height: 30px;
+      background-color: peachpuff;
+    }
+    #profile-logo {
+      width: 40px;
+      height: 40px;
+    }
+    #image{
+      width: 50px;
+      border-radius: 50%;
+    }
+    #search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 200px);
+    }
+    
+    #search-input {
+      width: 600px;
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+    
+    #search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+    }
+    #search-button:hover::after {
+      width: 100%;
+    }
+    #ad-box {
+      position: absolute;
+      background-color: #f2f2f2;
+      height: 125px;
+      width:100%;
+    }
+    #Recent-block{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: normal;
+      position:absolute;
+      bottom : 120px;
+      right:10px;
+      background-color: wheat;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body onload="loadevent()">
+  <div id="header">
+    <a id="TU" href="#">TU COMPANIONS</a>
+    <a id="PP"href="#"><img id="image" src="default-profile-picture1.jpg" alt="Profile photo" width="50px"></a>
+  </div>
+  <!-- <div class="tip-box">
+    <p>This is tip box</p>
+  </div> -->
+  <div id="search-container">
+    <input id="search-input" type="text" placeholder="Enter your subject...">
+     <button id="search-button"><a href="../Learn.html">Go</a></button> 
+  </div>
+  <div id="Recent-block">
+    
+    <ul id = "list"></ul>
+  </div>
+  <footer>
+    <div id="ad-box">
+      <p>This is an advertisement.</p>
+    </div>
+  </footer>
+  <script src="learnsearch.js"></script>
+</body>
+</html>
